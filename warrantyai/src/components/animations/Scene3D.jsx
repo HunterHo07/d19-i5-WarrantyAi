@@ -109,7 +109,7 @@ const Scene3D = ({
   enableZoom = false,
   enableControls = true,
   background = 'transparent',
-  height = '400px',
+  height = '500px',
   hover = true,
 }) => {
   const renderModel = () => {
@@ -126,10 +126,10 @@ const Scene3D = ({
   };
 
   return (
-    <div className={`${className}`} style={{ height }}>
-      <Canvas>
-        <PerspectiveCamera makeDefault position={cameraPosition} />
-        <ambientLight intensity={0.5} />
+    <div className={`${className} w-full`} style={{ height }}>
+      <Canvas style={{ width: '100%', height: '100%' }}>
+        <PerspectiveCamera makeDefault position={cameraPosition} fov={40} />
+        <ambientLight intensity={0.7} />
         <pointLight position={[10, 10, 10]} intensity={1} />
         <Suspense fallback={null}>
           {renderModel()}

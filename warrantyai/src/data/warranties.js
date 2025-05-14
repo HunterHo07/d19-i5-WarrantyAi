@@ -1,3 +1,5 @@
+import { getAssetPath } from '../utils/paths';
+
 // Sample warranty data for demonstration purposes
 export const warranties = [
   {
@@ -11,7 +13,7 @@ export const warranties = [
     retailer: 'Tech Store',
     price: 1299.99,
     serialNumber: 'UBP-X1-2023-789456123',
-    receiptImage: '/assets/images/receipt-1.svg',
+    receiptImage: getAssetPath('assets/images/receipt-1.svg'),
     extendedWarranty: {
       price: 249.99,
       duration: '3 years'
@@ -40,7 +42,7 @@ export const warranties = [
     retailer: 'Home Depot',
     price: 1899.99,
     serialNumber: 'SR-X7000-2023-456789123',
-    receiptImage: '/assets/images/receipt-2.svg',
+    receiptImage: getAssetPath('assets/images/receipt-2.svg'),
     notes: 'Premium Protection Plan includes parts and labor',
     status: 'active',
     claimHistory: [],
@@ -65,7 +67,7 @@ export const warranties = [
     retailer: 'Camera World',
     price: 3899.99,
     serialNumber: 'EOS-R5-123456789',
-    receiptImage: '/assets/images/receipt-3.svg',
+    receiptImage: getAssetPath('assets/images/receipt-3.svg'),
     notes: 'Accidental damage protection included',
     status: 'active',
     claimHistory: [

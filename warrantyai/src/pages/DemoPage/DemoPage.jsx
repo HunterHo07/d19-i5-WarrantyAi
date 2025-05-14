@@ -10,6 +10,7 @@ import WarrantyTimeline from '../../components/animations/WarrantyTimeline';
 import ParticleBackground from '../../components/animations/ParticleBackground';
 
 import { warranties } from '../../data/warranties';
+import { getAssetPath } from '../../utils/paths';
 
 const DemoPage = () => {
   const [activeTab, setActiveTab] = useState('scan');
@@ -17,51 +18,51 @@ const DemoPage = () => {
   const [extractedWarranty, setExtractedWarranty] = useState(null);
   const [userWarranties, setUserWarranties] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  
+
   // Sample receipts for demo
   const sampleReceipts = [
     {
       id: 1,
       name: 'Tech Store - Laptop',
-      image: '/assets/images/receipt-1.svg',
+      image: getAssetPath('assets/images/receipt-1.svg'),
       date: '05/14/2023',
     },
     {
       id: 2,
       name: 'Home Depot - Refrigerator',
-      image: '/assets/images/receipt-2.svg',
+      image: getAssetPath('assets/images/receipt-2.svg'),
       date: '04/22/2023',
     },
     {
       id: 3,
       name: 'Camera World - DSLR',
-      image: '/assets/images/receipt-3.svg',
+      image: getAssetPath('assets/images/receipt-3.svg'),
       date: '03/15/2023',
     },
   ];
-  
+
   // Handle receipt selection
   const handleReceiptSelect = (receipt) => {
     setSelectedReceipt(receipt);
     setExtractedWarranty(null);
   };
-  
+
   // Handle scan completion
   const handleScanComplete = (data) => {
     setIsLoading(true);
-    
+
     // Simulate API call delay
     setTimeout(() => {
       // Find the corresponding warranty from our sample data
-      const matchedWarranty = warranties.find(w => 
+      const matchedWarranty = warranties.find(w =>
         w.receiptImage === selectedReceipt.image
       );
-      
+
       setExtractedWarranty(matchedWarranty);
       setIsLoading(false);
     }, 1000);
   };
-  
+
   // Handle adding warranty to dashboard
   const handleAddWarranty = () => {
     if (extractedWarranty && !userWarranties.some(w => w.id === extractedWarranty.id)) {
@@ -71,7 +72,7 @@ const DemoPage = () => {
       setExtractedWarranty(null);
     }
   };
-  
+
   // Load saved warranties from localStorage on initial render
   useEffect(() => {
     const savedWarranties = localStorage.getItem('userWarranties');
@@ -79,14 +80,14 @@ const DemoPage = () => {
       setUserWarranties(JSON.parse(savedWarranties));
     }
   }, []);
-  
+
   // Save warranties to localStorage when they change
   useEffect(() => {
     if (userWarranties.length > 0) {
       localStorage.setItem('userWarranties', JSON.stringify(userWarranties));
     }
   }, [userWarranties]);
-  
+
   return (
     <div className="pt-16">
       <Section
@@ -96,7 +97,7 @@ const DemoPage = () => {
       >
         {/* Background Effects */}
         <ParticleBackground color="#8B5CF6" count={30} />
-        
+
         <div className="text-center mb-12">
           <AnimatedText
             text="Interactive Demo"
@@ -107,7 +108,7 @@ const DemoPage = () => {
             Experience how WarrantyAI works with this interactive demonstration
           </p>
         </div>
-        
+
         {/* Tabs */}
         <div className="flex justify-center mb-8">
           <div className="inline-flex rounded-md shadow-sm" role="group">
@@ -146,7 +147,7 @@ const DemoPage = () => {
             </button>
           </div>
         </div>
-        
+
         {/* Tab Content */}
         <div className="max-w-6xl mx-auto">
           {/* Scan Receipt Tab */}
@@ -160,7 +161,7 @@ const DemoPage = () => {
                 <p className="text-gray-600 dark:text-gray-400 mb-6">
                   Choose a sample receipt to scan or upload your own.
                 </p>
-                
+
                 <div className="space-y-4">
                   {sampleReceipts.map((receipt) => (
                     <div
@@ -191,7 +192,7 @@ const DemoPage = () => {
                       </div>
                     </div>
                   ))}
-                  
+
                   <div className="mt-6">
                     <Button
                       variant="outline"
@@ -218,20 +219,20 @@ const DemoPage = () => {
                   </div>
                 </div>
               </Card>
-              
+
               {/* Scanning Area */}
               <Card className="p-6 md:col-span-2">
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                   Warranty Scanner
                 </h2>
-                
+
                 {selectedReceipt ? (
                   <div>
                     <ScanningEffect
                       image={selectedReceipt.image}
                       onComplete={handleScanComplete}
                     />
-                    
+
                     {extractedWarranty && (
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -275,7 +276,7 @@ const DemoPage = () => {
               </Card>
             </div>
           )}
-          
+
           {/* Warranty Dashboard Tab */}
           {activeTab === 'dashboard' && (
             <Card className="p-6">
@@ -307,11 +308,11 @@ const DemoPage = () => {
                   Add Warranty
                 </Button>
               </div>
-              
+
               {userWarranties.length > 0 ? (
                 <div className="space-y-8">
                   <WarrantyTimeline warranties={userWarranties} />
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {userWarranties.map((warranty) => (
                       <Card
@@ -340,11 +341,11 @@ const DemoPage = () => {
                               : 'Expired'}
                           </span>
                         </div>
-                        
+
                         <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                           {warranty.brand}
                         </p>
-                        
+
                         <div className="grid grid-cols-2 gap-2 text-sm mb-4">
                           <div>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
@@ -363,7 +364,7 @@ const DemoPage = () => {
                             </p>
                           </div>
                         </div>
-                        
+
                         <div className="flex justify-end space-x-2">
                           <Button variant="outline" size="sm">
                             Details
@@ -413,14 +414,14 @@ const DemoPage = () => {
               )}
             </Card>
           )}
-          
+
           {/* Claim Assistant Tab */}
           {activeTab === 'claim' && (
             <Card className="p-6">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
                 Warranty Claim Assistant
               </h2>
-              
+
               <div className="max-w-3xl mx-auto">
                 <div className="mb-8">
                   <div className="flex items-center mb-4">
@@ -433,7 +434,7 @@ const DemoPage = () => {
                       </h3>
                     </div>
                   </div>
-                  
+
                   <Card variant="outline" className="p-4 ml-14">
                     <div className="grid grid-cols-1 gap-4">
                       {userWarranties.length > 0 ? (
@@ -475,7 +476,7 @@ const DemoPage = () => {
                     </div>
                   </Card>
                 </div>
-                
+
                 <div className="mb-8">
                   <div className="flex items-center mb-4">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
@@ -487,7 +488,7 @@ const DemoPage = () => {
                       </h3>
                     </div>
                   </div>
-                  
+
                   <Card variant="outline" className="p-4 ml-14 opacity-50">
                     <textarea
                       className="w-full h-32 p-3 border border-gray-300 dark:border-gray-700 rounded-md"
@@ -496,7 +497,7 @@ const DemoPage = () => {
                     ></textarea>
                   </Card>
                 </div>
-                
+
                 <div className="mb-8">
                   <div className="flex items-center mb-4">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
@@ -508,7 +509,7 @@ const DemoPage = () => {
                       </h3>
                     </div>
                   </div>
-                  
+
                   <Card variant="outline" className="p-4 ml-14 opacity-50">
                     <div className="border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-md p-6 text-center">
                       <svg
@@ -531,7 +532,7 @@ const DemoPage = () => {
                     </div>
                   </Card>
                 </div>
-                
+
                 <div className="flex justify-end">
                   <Button variant="primary" disabled={userWarranties.length === 0}>
                     Continue to Next Step

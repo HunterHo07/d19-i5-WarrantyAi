@@ -10,6 +10,7 @@ import Card from '../../components/common/Card';
 import AnimatedText from '../../components/animations/AnimatedText';
 import ParticleBackground from '../../components/animations/ParticleBackground';
 import Scene3D from '../../components/animations/Scene3D';
+import { getAssetPath } from '../../utils/paths';
 
 // Register ScrollTrigger with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -17,12 +18,12 @@ gsap.registerPlugin(ScrollTrigger);
 const WhyUsPage = () => {
   const featuresRef = useRef(null);
   const comparisonRef = useRef(null);
-  
+
   useEffect(() => {
     // Animate the features section
     if (featuresRef.current) {
       const features = featuresRef.current.querySelectorAll('.feature-card');
-      
+
       gsap.fromTo(
         features,
         { opacity: 0, y: 50 },
@@ -39,11 +40,11 @@ const WhyUsPage = () => {
         }
       );
     }
-    
+
     // Animate the comparison section
     if (comparisonRef.current) {
       const rows = comparisonRef.current.querySelectorAll('tr');
-      
+
       gsap.fromTo(
         rows,
         { opacity: 0, x: -30 },
@@ -61,7 +62,7 @@ const WhyUsPage = () => {
       );
     }
   }, []);
-  
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -72,7 +73,7 @@ const WhyUsPage = () => {
       >
         {/* Background Effects */}
         <ParticleBackground color="#8B5CF6" count={40} />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <motion.div
@@ -85,11 +86,11 @@ const WhyUsPage = () => {
                 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
                 tag="h1"
               />
-              
+
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
                 We're revolutionizing warranty management with cutting-edge AI technology and a user-centric approach.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/demo">
                   <Button variant="primary" size="lg" magnetic>
@@ -104,7 +105,7 @@ const WhyUsPage = () => {
               </div>
             </motion.div>
           </div>
-          
+
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -113,14 +114,15 @@ const WhyUsPage = () => {
           >
             <Scene3D
               modelType="document"
-              height="400px"
+              height="500px"
               className="w-full max-w-md"
               autoRotate
+              cameraPosition={[0, 0, 4]}
             />
           </motion.div>
         </div>
       </Section>
-      
+
       {/* Key Features Section */}
       <Section background="gray" ref={featuresRef}>
         <div className="text-center mb-16">
@@ -133,7 +135,7 @@ const WhyUsPage = () => {
             What sets WarrantyAI apart from traditional warranty management solutions
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
@@ -289,7 +291,7 @@ const WhyUsPage = () => {
           ))}
         </div>
       </Section>
-      
+
       {/* Comparison Table Section */}
       <Section>
         <div className="text-center mb-16">
@@ -302,7 +304,7 @@ const WhyUsPage = () => {
             See how WarrantyAI stacks up against other warranty management solutions
           </p>
         </div>
-        
+
         <Card className="overflow-hidden">
           <div className="overflow-x-auto">
             <table className="min-w-full" ref={comparisonRef}>
@@ -543,7 +545,7 @@ const WhyUsPage = () => {
           </div>
         </Card>
       </Section>
-      
+
       {/* Testimonials Section */}
       <Section background="primary">
         <div className="text-center mb-16">
@@ -556,26 +558,26 @@ const WhyUsPage = () => {
             Don't just take our word for it - hear from our satisfied users
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               quote: "WarrantyAI has saved me so much time and hassle. I used to lose track of warranties all the time, but now everything is organized in one place.",
               author: "Michael T.",
               role: "Tech Enthusiast",
-              image: "https://randomuser.me/api/portraits/men/32.jpg",
+              image: getAssetPath("assets/images/testimonial-1.svg"),
             },
             {
               quote: "The AI extraction is mind-blowing! I just snap a photo of my receipt and it automatically pulls all the important warranty information.",
               author: "Sarah L.",
               role: "Small Business Owner",
-              image: "https://randomuser.me/api/portraits/women/44.jpg",
+              image: getAssetPath("assets/images/testimonial-2.svg"),
             },
             {
               quote: "As someone who manages warranties for my entire family, WarrantyAI has been a game-changer. The reminders have already saved us money on claims.",
               author: "David K.",
               role: "Family Manager",
-              image: "https://randomuser.me/api/portraits/men/67.jpg",
+              image: getAssetPath("assets/images/testimonial-3.svg"),
             },
           ].map((testimonial, index) => (
             <Card
@@ -620,7 +622,7 @@ const WhyUsPage = () => {
           ))}
         </div>
       </Section>
-      
+
       {/* CTA Section */}
       <Section background="aurora" className="text-white">
         <div className="text-center">
@@ -638,7 +640,7 @@ const WhyUsPage = () => {
                 variant="accent"
                 size="lg"
                 magnetic
-                className="bg-white text-primary-600 hover:bg-gray-100"
+                className="bg-gradient-to-r from-accent-500 to-accent-600 text-white hover:from-accent-600 hover:to-accent-700 shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-white"
               >
                 Try the Demo
               </Button>
@@ -647,7 +649,7 @@ const WhyUsPage = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white/10"
+                className="border-2 border-white text-white hover:bg-white/10"
               >
                 Learn More
               </Button>

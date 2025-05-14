@@ -77,13 +77,15 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="ml-4 px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 hover:from-primary-600 hover:via-secondary-600 hover:to-accent-600 shadow-md hover:shadow-lg transition-all duration-300"
-              >
-                Try Now
-              </motion.button>
+              <Link to="/demo">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="ml-4 px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 hover:from-primary-600 hover:via-secondary-600 hover:to-accent-600 shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  Try Now
+                </motion.button>
+              </Link>
             </div>
           </div>
 
@@ -154,7 +156,11 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <button className="w-full mt-4 px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 hover:from-primary-600 hover:via-secondary-600 hover:to-accent-600 shadow-md hover:shadow-lg transition-all duration-300">Try Now</button>
+            <Link to="/demo" className="w-full">
+              <button className="w-full mt-4 px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 hover:from-primary-600 hover:via-secondary-600 hover:to-accent-600 shadow-md hover:shadow-lg transition-all duration-300">
+                Try Now
+              </button>
+            </Link>
           </div>
         </motion.div>
       )}

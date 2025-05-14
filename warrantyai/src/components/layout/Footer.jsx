@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../../utils/paths';
 
 const Footer = () => {
   const footerLinks = [
@@ -84,7 +85,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center">
               <img
-                src="/assets/images/logo.svg"
+                src={getAssetPath('assets/images/logo.svg')}
                 alt="WarrantyAI"
                 className="h-10 w-auto"
               />
@@ -107,7 +108,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          
+
           {footerLinks.map((section) => (
             <div key={section.title}>
               <h3 className="text-sm font-semibold text-gray-900 dark:text-white tracking-wider uppercase">
@@ -128,7 +129,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-12 border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500 dark:text-gray-400">
             &copy; {new Date().getFullYear()} WarrantyAI. All rights reserved.
