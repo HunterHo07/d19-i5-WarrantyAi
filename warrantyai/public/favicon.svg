@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Background -->
+  <path d="M25 5C25 5 10 10 10 10C10 10 10 25 10 30C10 35 15 40 25 45C35 40 40 35 40 30C40 25 40 10 40 10C40 10 25 5 25 5Z" fill="url(#shield-gradient)"/>
+  
+  <!-- Document Icon -->
+  <path d="M21 15H29C29.5523 15 30 15.4477 30 16V32C30 32.5523 29.5523 33 29 33H21C20.4477 33 20 32.5523 20 32V16C20 15.4477 20.4477 15 21 15Z" fill="white"/>
+  <path d="M22 18H28V19H22V18Z" fill="#0EA5E9"/>
+  <path d="M22 21H28V22H22V21Z" fill="#0EA5E9"/>
+  <path d="M22 24H28V25H22V24Z" fill="#0EA5E9"/>
+  <path d="M22 27H26V28H22V27Z" fill="#0EA5E9"/>
+  
+  <!-- Checkmark -->
+  <path d="M32 22C32 22 32 22 32 22C32 22 25 29 25 29C25 29 18 22 18 22" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="shield-gradient" x1="10" y1="5" x2="40" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+</svg>

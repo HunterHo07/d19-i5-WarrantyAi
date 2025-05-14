@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Background -->
+  <path d="M25 5C25 5 10 10 10 10C10 10 10 25 10 30C10 35 15 40 25 45C35 40 40 35 40 30C40 25 40 10 40 10C40 10 25 5 25 5Z" fill="url(#shield-gradient)"/>
+  
+  <!-- Document Icon -->
+  <path d="M21 15H29C29.5523 15 30 15.4477 30 16V32C30 32.5523 29.5523 33 29 33H21C20.4477 33 20 32.5523 20 32V16C20 15.4477 20.4477 15 21 15Z" fill="white"/>
+  <path d="M22 18H28V19H22V18Z" fill="#0EA5E9"/>
+  <path d="M22 21H28V22H22V21Z" fill="#0EA5E9"/>
+  <path d="M22 24H28V25H22V24Z" fill="#0EA5E9"/>
+  <path d="M22 27H26V28H22V27Z" fill="#0EA5E9"/>
+  
+  <!-- Checkmark -->
+  <path d="M32 22C32 22 32 22 32 22C32 22 25 29 25 29C25 29 18 22 18 22" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Text -->
+  <path d="M55 20L50 35H53L54 32H59L60 35H63L58 20H55ZM54.5 29L56.5 23L58.5 29H54.5Z" fill="url(#text-gradient)"/>
+  <path d="M64 20V35H67V29H68C69.3333 29 70.3333 28.6667 71 28C71.6667 27.3333 72 26.3333 72 25V24C72 22.6667 71.6667 21.6667 71 21C70.3333 20.3333 69.3333 20 68 20H64ZM67 23H68C68.3333 23 68.5833 23.0833 68.75 23.25C68.9167 23.4167 69 23.6667 69 24V25C69 25.3333 68.9167 25.5833 68.75 25.75C68.5833 25.9167 68.3333 26 68 26H67V23Z" fill="url(#text-gradient)"/>
+  <path d="M74 20V35H77V29H78C79.3333 29 80.3333 28.6667 81 28C81.6667 27.3333 82 26.3333 82 25V24C82 22.6667 81.6667 21.6667 81 21C80.3333 20.3333 79.3333 20 78 20H74ZM77 23H78C78.3333 23 78.5833 23.0833 78.75 23.25C78.9167 23.4167 79 23.6667 79 24V25C79 25.3333 78.9167 25.5833 78.75 25.75C78.5833 25.9167 78.3333 26 78 26H77V23Z" fill="url(#text-gradient)"/>
+  <path d="M84 20V35H87V29H88C89.3333 29 90.3333 28.6667 91 28C91.6667 27.3333 92 26.3333 92 25V24C92 22.6667 91.6667 21.6667 91 21C90.3333 20.3333 89.3333 20 88 20H84ZM87 23H88C88.3333 23 88.5833 23.0833 88.75 23.25C88.9167 23.4167 89 23.6667 89 24V25C89 25.3333 88.9167 25.5833 88.75 25.75C88.5833 25.9167 88.3333 26 88 26H87V23Z" fill="url(#text-gradient)"/>
+  <path d="M94 20V35H97V29L100 35H103V20H100V26L97 20H94Z" fill="url(#text-gradient)"/>
+  <path d="M105 20V35H108V20H105Z" fill="url(#text-gradient)"/>
+  <path d="M110 20V23H113V35H116V23H119V20H110Z" fill="url(#text-gradient)"/>
+  <path d="M121 20V35H124V29L127 35H130V20H127V26L124 20H121Z" fill="url(#text-gradient)"/>
+  <path d="M138 20V35H141V29H142C143.333 29 144.333 28.6667 145 28C145.667 27.3333 146 26.3333 146 25V24C146 22.6667 145.667 21.6667 145 21C144.333 20.3333 143.333 20 142 20H138ZM141 23H142C142.333 23 142.583 23.0833 142.75 23.25C142.917 23.4167 143 23.6667 143 24V25C143 25.3333 142.917 25.5833 142.75 25.75C142.583 25.9167 142.333 26 142 26H141V23Z" fill="url(#text-gradient)"/>
+  <path d="M148 20V35H151V20H148Z" fill="url(#text-gradient)"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="shield-gradient" x1="10" y1="5" x2="40" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="50" y1="20" x2="151" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+</svg>

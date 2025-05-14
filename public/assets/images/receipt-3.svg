@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Receipt Background -->
+  <rect width="300" height="500" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Store Logo -->
+  <rect x="120" y="20" width="60" height="30" rx="4" fill="#F3F4F6"/>
+  <text x="150" y="40" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">CAMERA WORLD</text>
+  
+  <!-- Store Info -->
+  <text x="150" y="70" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">789 Photo Lane, Anytown, USA</text>
+  <text x="150" y="85" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">Tel: (555) 456-7890</text>
+  <text x="150" y="100" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">www.cameraworld.com</text>
+  
+  <!-- Receipt Header -->
+  <line x1="30" y1="120" x2="270" y2="120" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="150" y="140" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle" font-weight="bold">SALES RECEIPT</text>
+  <text x="60" y="160" font-family="Arial" font-size="10" fill="#6B7280">Date: 03/15/2023</text>
+  <text x="60" y="175" font-family="Arial" font-size="10" fill="#6B7280">Time: 16:45:33</text>
+  <text x="60" y="190" font-family="Arial" font-size="10" fill="#6B7280">Receipt #: CW-123456789</text>
+  <text x="60" y="205" font-family="Arial" font-size="10" fill="#6B7280">Sales Rep: Michael Chen</text>
+  <line x1="30" y1="220" x2="270" y2="220" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Item Details -->
+  <text x="40" y="240" font-family="Arial" font-size="10" fill="#4B5563" font-weight="bold">Item</text>
+  <text x="200" y="240" font-family="Arial" font-size="10" fill="#4B5563" font-weight="bold">Price</text>
+  <text x="250" y="240" font-family="Arial" font-size="10" fill="#4B5563" font-weight="bold">Total</text>
+  
+  <text x="40" y="260" font-family="Arial" font-size="10" fill="#4B5563">Pro DSLR Camera EOS R5</text>
+  <text x="40" y="275" font-family="Arial" font-size="8" fill="#6B7280">Serial #: EOS-R5-123456789</text>
+  <text x="200" y="260" font-family="Arial" font-size="10" fill="#4B5563">$3,899.99</text>
+  <text x="250" y="260" font-family="Arial" font-size="10" fill="#4B5563">$3,899.99</text>
+  
+  <text x="40" y="295" font-family="Arial" font-size="10" fill="#4B5563">Accidental Damage Protection (2 Years)</text>
+  <text x="200" y="295" font-family="Arial" font-size="10" fill="#4B5563">$399.99</text>
+  <text x="250" y="295" font-family="Arial" font-size="10" fill="#4B5563">$399.99</text>
+  
+  <text x="40" y="315" font-family="Arial" font-size="10" fill="#4B5563">Premium Lens Kit</text>
+  <text x="200" y="315" font-family="Arial" font-size="10" fill="#4B5563">$1,299.99</text>
+  <text x="250" y="315" font-family="Arial" font-size="10" fill="#4B5563">$1,299.99</text>
+  
+  <line x1="30" y1="335" x2="270" y2="335" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Totals -->
+  <text x="150" y="355" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="end">Subtotal:</text>
+  <text x="250" y="355" font-family="Arial" font-size="10" fill="#4B5563">$5,599.97</text>
+  
+  <text x="150" y="375" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="end">Tax (8.25%):</text>
+  <text x="250" y="375" font-family="Arial" font-size="10" fill="#4B5563">$461.99</text>
+  
+  <text x="150" y="395" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="end" font-weight="bold">TOTAL:</text>
+  <text x="250" y="395" font-family="Arial" font-size="12" fill="#4B5563" font-weight="bold">$6,061.96</text>
+  
+  <line x1="30" y1="415" x2="270" y2="415" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Payment Info -->
+  <text x="60" y="435" font-family="Arial" font-size="10" fill="#6B7280">Payment Method: Credit Card</text>
+  <text x="60" y="450" font-family="Arial" font-size="10" fill="#6B7280">Card Type: American Express</text>
+  <text x="60" y="465" font-family="Arial" font-size="10" fill="#6B7280">Card #: XXXX-XXXX-XXXX-1234</text>
+  
+  <!-- Warranty Info (Highlighted) -->
+  <rect x="30" y="485" width="240" height="25" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="150" y="502" font-family="Arial" font-size="10" fill="#1E40AF" text-anchor="middle" font-weight="bold">
+    WARRANTY EXPIRES: 03/15/2025
+  </text>
+</svg>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Receipt Background -->
+  <rect width="300" height="500" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Store Logo -->
+  <rect x="120" y="20" width="60" height="30" rx="4" fill="#F3F4F6"/>
+  <text x="150" y="40" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle">HOME DEPOT</text>
+  
+  <!-- Store Info -->
+  <text x="150" y="70" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">456 Retail Drive, Anytown, USA</text>
+  <text x="150" y="85" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">Tel: (555) 987-6543</text>
+  <text x="150" y="100" font-family="Arial" font-size="10" fill="#6B7280" text-anchor="middle">www.homedepot.com</text>
+  
+  <!-- Receipt Header -->
+  <line x1="30" y1="120" x2="270" y2="120" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="150" y="140" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="middle" font-weight="bold">SALES RECEIPT</text>
+  <text x="60" y="160" font-family="Arial" font-size="10" fill="#6B7280">Date: 04/22/2023</text>
+  <text x="60" y="175" font-family="Arial" font-size="10" fill="#6B7280">Time: 10:15:22</text>
+  <text x="60" y="190" font-family="Arial" font-size="10" fill="#6B7280">Receipt #: HD-456789123</text>
+  <text x="60" y="205" font-family="Arial" font-size="10" fill="#6B7280">Sales Rep: Sarah Johnson</text>
+  <line x1="30" y1="220" x2="270" y2="220" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Item Details -->
+  <text x="40" y="240" font-family="Arial" font-size="10" fill="#4B5563" font-weight="bold">Item</text>
+  <text x="200" y="240" font-family="Arial" font-size="10" fill="#4B5563" font-weight="bold">Price</text>
+  <text x="250" y="240" font-family="Arial" font-size="10" fill="#4B5563" font-weight="bold">Total</text>
+  
+  <text x="40" y="260" font-family="Arial" font-size="10" fill="#4B5563">Smart Refrigerator X7000</text>
+  <text x="40" y="275" font-family="Arial" font-size="8" fill="#6B7280">Serial #: SR-X7000-2023-456789123</text>
+  <text x="200" y="260" font-family="Arial" font-size="10" fill="#4B5563">$1,899.99</text>
+  <text x="250" y="260" font-family="Arial" font-size="10" fill="#4B5563">$1,899.99</text>
+  
+  <text x="40" y="295" font-family="Arial" font-size="10" fill="#4B5563">Premium Protection Plan (7 Years)</text>
+  <text x="200" y="295" font-family="Arial" font-size="10" fill="#4B5563">$299.99</text>
+  <text x="250" y="295" font-family="Arial" font-size="10" fill="#4B5563">$299.99</text>
+  
+  <line x1="30" y1="315" x2="270" y2="315" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Totals -->
+  <text x="150" y="335" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="end">Subtotal:</text>
+  <text x="250" y="335" font-family="Arial" font-size="10" fill="#4B5563">$2,199.98</text>
+  
+  <text x="150" y="355" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="end">Tax (8.25%):</text>
+  <text x="250" y="355" font-family="Arial" font-size="10" fill="#4B5563">$181.50</text>
+  
+  <text x="150" y="375" font-family="Arial" font-size="12" fill="#4B5563" text-anchor="end" font-weight="bold">TOTAL:</text>
+  <text x="250" y="375" font-family="Arial" font-size="12" fill="#4B5563" font-weight="bold">$2,381.48</text>
+  
+  <line x1="30" y1="395" x2="270" y2="395" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Payment Info -->
+  <text x="60" y="415" font-family="Arial" font-size="10" fill="#6B7280">Payment Method: Credit Card</text>
+  <text x="60" y="430" font-family="Arial" font-size="10" fill="#6B7280">Card Type: Mastercard</text>
+  <text x="60" y="445" font-family="Arial" font-size="10" fill="#6B7280">Card #: XXXX-XXXX-XXXX-7890</text>
+  
+  <!-- Warranty Info (Highlighted) -->
+  <rect x="30" y="465" width="240" height="25" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="150" y="482" font-family="Arial" font-size="10" fill="#1E40AF" text-anchor="middle" font-weight="bold">
+    WARRANTY EXPIRES: 04/22/2030
+  </text>
+</svg>
