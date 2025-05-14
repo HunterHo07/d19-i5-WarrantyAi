@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Receipt Background -->
+  <rect width="300" height="500" fill="#FFFFFF"/>
+  <path d="M0 0L15 10L0 20L15 30L0 40L15 50L0 60L15 70L0 80L15 90L0 100L15 110L0 120L15 130L0 140L15 150L0 160L15 170L0 180L15 190L0 200L15 210L0 220L15 230L0 240L15 250L0 260L15 270L0 280L15 290L0 300L15 310L0 320L15 330L0 340L15 350L0 360L15 370L0 380L15 390L0 400L15 410L0 420L15 430L0 440L15 450L0 460L15 470L0 480L15 490L0 500" stroke="#EEEEEE" stroke-width="2"/>
+  <path d="M300 0L285 10L300 20L285 30L300 40L285 50L300 60L285 70L300 80L285 90L300 100L285 110L300 120L285 130L300 140L285 150L300 160L285 170L300 180L285 190L300 200L285 210L300 220L285 230L300 240L285 250L300 260L285 270L300 280L285 290L300 300L285 310L300 320L285 330L300 340L285 350L300 360L285 370L300 380L285 390L300 400L285 410L300 420L285 430L300 440L285 450L300 460L285 470L300 480L285 490L300 500" stroke="#EEEEEE" stroke-width="2"/>
+  
+  <!-- Store Logo -->
+  <rect x="100" y="30" width="100" height="40" rx="5" fill="#8B5CF6"/>
+  <text x="150" y="55" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">HOME DEPOT</text>
+  
+  <!-- Receipt Content -->
+  <text x="50" y="100" font-family="Arial" font-size="12" fill="#333333">INVOICE #: HD-2023-12345</text>
+  <text x="50" y="120" font-family="Arial" font-size="12" fill="#333333">DATE: 04/22/2023 2:30 PM</text>
+  <text x="50" y="140" font-family="Arial" font-size="12" fill="#333333">CUSTOMER: Sarah Johnson</text>
+  
+  <line x1="50" y1="160" x2="250" y2="160" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <text x="50" y="180" font-family="Arial" font-size="12" font-weight="bold" fill="#333333">ITEM</text>
+  <text x="200" y="180" font-family="Arial" font-size="12" font-weight="bold" fill="#333333" text-anchor="end">PRICE</text>
+  
+  <text x="50" y="200" font-family="Arial" font-size="12" fill="#333333">Smart Refrigerator X7000</text>
+  <text x="200" y="200" font-family="Arial" font-size="12" fill="#333333" text-anchor="end">$1,899.99</text>
+  
+  <text x="50" y="220" font-family="Arial" font-size="12" fill="#333333">Premium Protection Plan (5 Years)</text>
+  <text x="200" y="220" font-family="Arial" font-size="12" fill="#333333" text-anchor="end">$349.99</text>
+  
+  <text x="50" y="240" font-family="Arial" font-size="12" fill="#333333">Water Filter (3-Pack)</text>
+  <text x="200" y="240" font-family="Arial" font-size="12" fill="#333333" text-anchor="end">$79.99</text>
+  
+  <line x1="50" y1="260" x2="250" y2="260" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <text x="50" y="280" font-family="Arial" font-size="12" fill="#333333">Subtotal</text>
+  <text x="200" y="280" font-family="Arial" font-size="12" fill="#333333" text-anchor="end">$2,329.97</text>
+  
+  <text x="50" y="300" font-family="Arial" font-size="12" fill="#333333">Tax (7.5%)</text>
+  <text x="200" y="300" font-family="Arial" font-size="12" fill="#333333" text-anchor="end">$174.75</text>
+  
+  <text x="50" y="320" font-family="Arial" font-size="12" font-weight="bold" fill="#333333">TOTAL</text>
+  <text x="200" y="320" font-family="Arial" font-size="12" font-weight="bold" fill="#333333" text-anchor="end">$2,504.72</text>
+  
+  <line x1="50" y1="340" x2="250" y2="340" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <!-- Warranty Information -->
+  <rect x="50" y="360" width="200" height="60" rx="5" fill="#F5F3FF"/>
+  <text x="60" y="380" font-family="Arial" font-size="12" font-weight="bold" fill="#8B5CF6">WARRANTY INFORMATION</text>
+  <text x="60" y="400" font-family="Arial" font-size="11" fill="#333333">Smart Refrigerator X7000 - 2 Year Manufacturer</text>
+  <text x="60" y="415" font-family="Arial" font-size="11" fill="#333333">+ 5 Year Protection Plan (Total: 7 Years)</text>
+  
+  <!-- Serial Number -->
+  <text x="50" y="450" font-family="Arial" font-size="10" fill="#666666">Serial #: SR-X7000-2023-456789123</text>
+  
+  <!-- Barcode -->
+  <rect x="75" y="460" width="150" height="20" fill="#333333"/>
+  <text x="150" y="490" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">Thank you for your purchase!</text>
+</svg>

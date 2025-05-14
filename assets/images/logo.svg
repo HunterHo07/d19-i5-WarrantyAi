@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Background -->
+  <path d="M25 5C25 5 10 10 10 10C10 10 10 25 10 30C10 35 15 40 25 45C35 40 40 35 40 30C40 25 40 10 40 10C40 10 25 5 25 5Z" fill="url(#shield-gradient)"/>
+
+  <!-- Document Icon -->
+  <path d="M21 15H29C29.5523 15 30 15.4477 30 16V32C30 32.5523 29.5523 33 29 33H21C20.4477 33 20 32.5523 20 32V16C20 15.4477 20.4477 15 21 15Z" fill="white"/>
+  <path d="M22 18H28V19H22V18Z" fill="#0EA5E9"/>
+  <path d="M22 21H28V22H22V21Z" fill="#0EA5E9"/>
+  <path d="M22 24H28V25H22V24Z" fill="#0EA5E9"/>
+  <path d="M22 27H26V28H22V27Z" fill="#0EA5E9"/>
+
+  <!-- Checkmark -->
+  <path d="M32 22C32 22 32 22 32 22C32 22 25 29 25 29C25 29 18 22 18 22" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Text: WARRANTY AI -->
+  <path d="M55 20L52 35H55L55.5 32H60.5L61 35H64L61 20H55ZM56 29L58 23L60 29H56Z" fill="url(#text-gradient)"/>
+  <path d="M65 20L68 35H71L73 26L75 35H78L81 20H78L76 29L74 20H72L70 29L68 20H65Z" fill="url(#text-gradient)"/>
+  <path d="M82 20V35H85V20H82Z" fill="url(#text-gradient)"/>
+  <path d="M87 20V35H90V20H87Z" fill="url(#text-gradient)"/>
+  <path d="M92 20V35H95V29L98 35H101V20H98V26L95 20H92Z" fill="url(#text-gradient)"/>
+  <path d="M103 20V23H106V35H109V23H112V20H103Z" fill="url(#text-gradient)"/>
+  <path d="M114 20V35H117V29L120 35H123V20H120V26L117 20H114Z" fill="url(#text-gradient)"/>
+  <path d="M125 20V35H128V20H125Z" fill="url(#text-gradient)"/>
+
+  <!-- Text: AI -->
+  <path d="M135 20L132 35H135L135.5 32H140.5L141 35H144L141 20H135ZM136 29L138 23L140 29H136Z" fill="url(#text-gradient)"/>
+  <path d="M145 20V35H148V20H145Z" fill="url(#text-gradient)"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="shield-gradient" x1="10" y1="5" x2="40" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="50" y1="20" x2="151" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+</svg>
