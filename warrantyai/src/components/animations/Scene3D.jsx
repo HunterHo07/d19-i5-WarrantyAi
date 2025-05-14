@@ -2,11 +2,12 @@ import { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, useTexture, Environment } from '@react-three/drei';
 import * as THREE from 'three';
+import { getAssetPath } from '../../utils/paths';
 
 // Receipt Model
 const Receipt = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover = false }) => {
   const meshRef = useRef();
-  
+
   // Animate on hover
   useFrame((state) => {
     if (hover && meshRef.current) {
@@ -14,10 +15,10 @@ const Receipt = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover 
       meshRef.current.position.y = Math.sin(state.clock.getElapsedTime()) * 0.1;
     }
   });
-  
+
   // Load texture
-  const texture = useTexture('/assets/images/receipt-1.svg');
-  
+  const texture = useTexture(getAssetPath('assets/images/receipt-1.svg'));
+
   return (
     <group position={position} rotation={rotation} scale={scale}>
       <mesh ref={meshRef}>
@@ -32,18 +33,18 @@ const Receipt = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover 
 const Document = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover = false }) => {
   const groupRef = useRef();
   const pageRef = useRef();
-  
+
   // Animate on hover
   useFrame((state) => {
     if (hover && groupRef.current) {
       groupRef.current.rotation.y = Math.sin(state.clock.getElapsedTime() * 0.5) * 0.3;
-      
+
       if (pageRef.current) {
         pageRef.current.position.z = Math.sin(state.clock.getElapsedTime() * 2) * 0.02 + 0.02;
       }
     }
   });
-  
+
   return (
     <group ref={groupRef} position={position} rotation={rotation} scale={scale}>
       {/* Document base */}
@@ -51,13 +52,13 @@ const Document = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover
         <boxGeometry args={[1, 1.4, 0.05]} />
         <meshStandardMaterial color="#ffffff" />
       </mesh>
-      
+
       {/* Document page */}
       <mesh ref={pageRef} position={[0, 0, 0.03]}>
         <planeGeometry args={[0.9, 1.3, 1]} />
         <meshStandardMaterial color="#f5f5f5" />
       </mesh>
-      
+
       {/* Text lines */}
       {[...Array(6)].map((_, i) => (
         <mesh key={i} position={[0, 0.5 - i * 0.2, 0.031]}>
@@ -72,7 +73,7 @@ const Document = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover
 // Shield Model
 const Shield = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover = false }) => {
   const meshRef = useRef();
-  
+
   // Animate on hover
   useFrame((state) => {
     if (hover && meshRef.current) {
@@ -80,7 +81,7 @@ const Shield = ({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1, hover =
       meshRef.current.position.y = Math.sin(state.clock.getElapsedTime()) * 0.1;
     }
   });
-  
+
   return (
     <group position={position} rotation={rotation} scale={scale}>
       <mesh ref={meshRef}>
@@ -123,7 +124,7 @@ const Scene3D = ({
         return <Receipt hover={hover} />;
     }
   };
-  
+
   return (
     <div className={`${className}`} style={{ height }}>
       <Canvas>

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../../utils/paths';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -81,7 +82,7 @@ const HomePage = () => {
       >
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-800 to-secondary-900 opacity-90"></div>
-        <div className="absolute inset-0 bg-[url('/assets/images/grid-pattern.svg')] opacity-20"></div>
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${getAssetPath('assets/images/grid-pattern.svg')})`, opacity: 0.2 }}></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
